@@ -1,0 +1,49 @@
+#char{
+    background-color: rgb(204, 204, 204);
+}
+.char{
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.char.grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.char-box{
+    padding: 5px 5px;
+    margin: 20px 0;
+}
+
+.char-img{
+    img{
+        height: 130px;
+        width: 130px;
+    }
+}
+.char-text{
+    h3 {
+        margin: 0 10px;
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 1000px){
+    .char.grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .char.grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width : 480px){
+    .char.grid{
+        gap: 20px;
+    }
+}

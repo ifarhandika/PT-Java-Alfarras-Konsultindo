@@ -1,0 +1,48 @@
+.container.flex{
+    flex-direction: column;
+}
+.hero{
+    width: 80%;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.form-box{
+    width: 80%;
+    a {
+        color: $optionalColor;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 8px 20px;
+        border: 2px solid $optionalColor2;
+        border-radius: 5px;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: $optionalColor2;
+            color: $primaryColor;
+        }
+    }
+}
+
+.form-box.flex{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 1000px){
+    .hero{
+        margin-top: 150px;
+    }
+    .form-perpajakan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

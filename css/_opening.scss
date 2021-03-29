@@ -1,0 +1,37 @@
+.intro{
+    background: $optionalColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(100%);
+}
+
+.intro-text{
+    color: $primaryColor;
+}
+
+.hide{
+    background: $optionalColor;
+    overflow: hidden;
+
+    span{
+        transform: translateY(100%);
+        display: inline-block;
+    }
+}
+

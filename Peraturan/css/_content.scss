@@ -1,0 +1,42 @@
+.container.flex{
+    flex-direction: column;
+}
+.hero{
+    width: 90%;
+    margin: 100px auto 40px auto;
+    text-align: left;
+}
+
+.peraturan{
+    width: 90%;
+    
+    li{
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 50px;
+        }
+    }
+    a{
+        color: $secondaryColor;
+        transition: 0.2s;
+        &:hover{
+            color: #233e61;
+        }  
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 1000px){
+    .hero{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width : 480px){
+    .hero{
+        width: 80%;
+    }
+    .peraturan{
+        width: 80%;
+    }
+}

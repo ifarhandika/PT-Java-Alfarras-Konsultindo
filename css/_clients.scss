@@ -1,0 +1,57 @@
+#clients{
+    background-color: rgb(204, 204, 204);
+}
+.clients{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.clients-hero{
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.clients.grid{
+    grid-template-columns: 1fr 2fr;
+}
+
+.clients-logo.grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.clients-img{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    img{
+        margin: 20px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 768px){
+    .clients-hero{
+        font-size: 2rem;
+    }
+    .clients-hero{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .clients.grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width : 600px){
+    .clients-logo.grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}

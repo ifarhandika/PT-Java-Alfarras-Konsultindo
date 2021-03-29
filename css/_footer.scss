@@ -1,0 +1,97 @@
+footer{
+    width: 100%;
+    background-color: $optionalColor2;
+    color:white;
+    .container.flex{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer.grid{
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.footer-box{
+    height: 200px;
+    margin: 10px 10px;
+    padding: 30px 30px;
+    h2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        color: $lightOptionalColor2;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    li{
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+    a{
+        color: $lightOptionalColor2;
+        margin-right: 20px;
+        transition: 0.4s;
+        text-decoration: none;
+        font-size: 15px;
+
+        &:hover{
+            color: whitesmoke;
+            transform: scale(1.5);
+        }
+    }
+}
+
+
+.copyright{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    color: $lightOptionalColor2;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    font-size: 3rem;
+
+    a{
+        color: #29ac00;
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 896px){
+    .footer.grid{
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .footer-box{
+        height: auto;
+        margin: 0;
+        padding: 15px 15px;
+    }
+    .footer.grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width : 480px){
+    .footer.grid{
+        grid-template-columns: 1fr;
+    }
+}

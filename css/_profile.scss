@@ -1,0 +1,86 @@
+.profile-hero{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.profile-box{
+    width: 90%;
+    margin: 0 auto;
+    h3 {
+        font-size: 3rem;
+        font-family: 'Raleway';
+        font-weight: 400;
+    }
+
+}
+.profile-grid{
+    width: 90%;
+    margin: 20px auto;
+    p {
+        font-size: 1.2rem;
+        font-family: 'Poppins';
+        font-weight: 300;
+        margin: 10px 0;
+    }
+}
+.profile-grid.grid{
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+
+
+.profile-value{
+    width: 100%;
+    .value-box{
+        margin: 10px 0;
+        width: 100%;
+        .value-hero{
+            font-size: 15   px;
+            font-weight: 700;
+        }
+        .score{
+            font-size: 25px;
+        }
+        .value-bar{
+            height: 10px;   
+        }
+        .bar1{
+            background: lightcoral;
+            width: calc(100% - 10%);
+        }
+        .bar2{
+            background:midnightblue;
+            width: calc(100% - 9%);
+        }
+        .bar3{
+            background: lightseagreen;
+            width: calc(100% - 12%);
+        }
+        .bar4{
+            background: lightslategrey;
+            width: calc(100% - 5%);
+        }
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 768px){
+    
+    .profile-grid.grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width : 480px){
+    .profile-text{
+        h3{
+            font-size: 2.2rem;
+        }
+    }
+}

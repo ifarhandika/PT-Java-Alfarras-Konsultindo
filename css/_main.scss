@@ -1,0 +1,75 @@
+#main {
+    height: 100vh;
+    background: url("/img/main-page_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-hero {
+    width: 93%;
+    font-family: "Montserrat";
+    color: $primaryColor;
+}
+
+
+.main-text {
+    h2 {
+        font-size: 3rem;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+
+    small {
+        font-size: 1.1rem;
+    }
+}
+
+.main-btn{
+    margin-top: 50px;
+    .layanan-kami {
+        color: white;
+        background: #a40000;
+        border: none;
+        &:hover {
+            background: #7b0000;
+        }
+        margin-right: 5px;
+    }
+
+    .kontak-kami {
+        color: white;
+        background: #008f00;
+        border: none;
+        &:hover {
+            background: #006600;
+        }
+    }
+}
+
+//-------------------------------- Responsive ---------------------------------
+
+@media screen and (max-width : 1000px){
+    .main-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width : 568px){
+    .main-text{
+        h2{
+            font-size: 2.7rem;
+        }
+    }
+}
+@media screen and (max-width : 480px){
+    .main-text{
+        h2{
+            font-size: 2.3rem;
+        }
+    }
+}

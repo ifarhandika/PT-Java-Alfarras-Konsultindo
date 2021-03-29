@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+$primaryColor: #f1f1f1;
+$secondaryColor: #366296;
+$optionalColor: #222831;
+$optionalColor2: #1b262c;
+$lightOptionalColor2: #4b6575;
+
+@import "./header_peraturan";
+@import "./content";
+@import "./footer_peraturan";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $primaryColor;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+h2{
+    font-size: 2rem;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 13px 20px;
+    transition: 0.3s;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 200px;
+    padding: 20px 30px;
+    margin: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+    width: 150px;
+    height: 5px;
+    background: black;
+    margin: 10px auto auto;
+}
